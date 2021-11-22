@@ -377,7 +377,7 @@ tr,td{
 }
 .table-responsive{
   background-color:#172545;
-  height: 900px;
+  height: 700px;
   overflow-y: auto;
   width: 640px;
 }

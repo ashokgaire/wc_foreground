@@ -313,6 +313,7 @@ export default function WordCloud() {
 					</button>
 					</div>
                          {flag ? <>
+				  { count.length > 1 ?  <>
 		          <div class="table-responsive">
                           <table id="table-id" class="table table-striped js-sort-table crypt-table-market-cap">
 					<thead>
@@ -322,9 +323,9 @@ export default function WordCloud() {
 						</tr>
 					</thead>
 					<tbody id="tbody">	
-			               { 
-				       
-				
+					
+
+			               {                            				
 				       Object.entries(count).map(([key,value])=>{
                                   return (
 				       <tr key={key}>
@@ -336,7 +337,12 @@ export default function WordCloud() {
 				  )}
 					</tbody>
 				</table>
-			  </div></> : <> 
+				</div>
+				</> : <>
+				<p> </p>
+				</>
+				}
+			  </> : <> 
 		          <img src={result} className="result-img" id="result-img" alt="cloud" />
 		              </>
 	             }
