@@ -1,0 +1,11 @@
+
+flow chart of react app
+
+1. user enters the https://irs-cloud.herokuapp.com/ and hit
+2. request sends to heroku server
+3. heroku server sends response back to user with data(html, css, js, default images)
+4. user browser renders the returned data
+5. user fill in the forms(options and words) and then click generate button
+6. heroku server sends the data to our backend server
+7. backend server process our data then ( inserts to database and return image url and wordlist)
+8. then react app displays the image and wordlist
