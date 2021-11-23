@@ -16,8 +16,6 @@ const images =  {
   "bird.png": require("./bird.png"),
   "diamond.png": require("./diamond.png"),
   
-  "diamond.png": require("./diamond.png"),
-  "diamond.png": require("./diamond.png"),
 };
 
 export default images;

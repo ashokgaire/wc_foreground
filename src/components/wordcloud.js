@@ -314,8 +314,8 @@ export default function WordCloud() {
 					</div>
                          {flag ? <>
 				  { count.length > 1 ?  <>
-		          <div class="table-responsive">
-                          <table id="table-id" class="table table-striped js-sort-table crypt-table-market-cap">
+		          <div className="table-responsive">
+                          <table id="table-id" className="table table-striped js-sort-table crypt-table-market-cap">
 					<thead>
 						<tr>
 							<th class="js-sort-number">Words</th>

@@ -4,7 +4,7 @@ function Header(){
 	return (
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-	<p>IRS</p>
+	<p>Word Cloud for multi-languages</p>
       </header>
 	);
 }
