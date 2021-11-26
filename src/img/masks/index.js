@@ -14,7 +14,15 @@ const images =  {
   "jeep.png": require("./jeep.png"),
   "dianasor.png": require("./dianasor.png"),
   "bird.png": require("./bird.png"),
+  "police.png": require("./police.png"),
+  "laptop.png": require("./laptop.png"),
+  "mobile.png": require("./mobile.png"),
+  "pant.png": require("./pants.png"),
+  "shirt.png": require("./shirt.png"),
+  "tiger.png": require("./tiger.png"),
   "diamond.png": require("./diamond.png"),
+  "bike.png": require("./bike.png"),
+  "bag.png": require("./bag.png"),
   
 };
 

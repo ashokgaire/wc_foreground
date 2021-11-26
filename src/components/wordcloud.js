@@ -264,10 +264,39 @@ export default function WordCloud() {
                                                  style={{display:'none'}} 
 						/>
 						<select className="lang-select" onChange={handleLang}>
-								<option selected value="en">English</option>
-								<option value="kr">Korean</option>
-								<option value="ci">Cinease</option>
-								<option value="jp">Japanease</option>
+								<option selected value="en">English (en)</option>
+								<option value="ko">Korean (ko)</option>
+								<option value="cn">Cinease (cn)</option>
+								<option value="ja">Japanease (ja) </option>
+								
+		<option value="ar">Arabic (ar)</option>
+	<option value="ar">Arabic (ar)</option>
+	<option value="hy">Armenian (hy)</option>
+	<option value="bn">Bengali (bn)</option>
+	<option value="bg">Bulgarian (bg)</option>
+	<option value="hr">Croatian (hr)</option>
+	<option value="cs">Czech (cs)</option>
+	<option value="da">Danish (da)</option>
+	<option value="nl">Dutch (nl)</option>
+	<option value="tl">Filipino (tl)</option>
+	<option value="fi">Finnish (fi)</option>
+	<option value="fr">French (fr)</option>
+	<option value="ka">Georgian (ka)</option>
+	<option value="de">German (de)</option>
+	<option value="el">Greek (el)</option>
+	<option value="hi">Hindi (hi)</option>
+	<option value="hu">Hungarian (hu)</option>
+	<option value="id">Indonesian (id)</option>
+	<option value="it">Italian (it)</option>
+	<option value="ms">Malay (ms)</option><
+		option value="no">Norwegian (no)</option>
+		<option value="fa">Persian (fa)</option>
+		<option value="pl">Polish (pl)</option>
+		<option value="pt">Portuguese (pt)</option>
+		<option value="ro">Romanian (ro)</option>
+		<option value="ru">Russian (ru)</option>
+		<option value="sl">Slovenian (sl)</option>
+		<option value="es">Spanish (es)</option>
 							</select>
 							</div>
 						</div>
