@@ -8,6 +8,8 @@ import { TwitterPicker } from 'react-color';
 import axios from 'axios';
 import { saveAs } from 'file-saver'
 import AdSense from 'react-adsense';
+import reset from '../img/reset.png';
+
 require('dotenv').config()
 
 export default function WordCloud() {
@@ -81,6 +83,11 @@ export default function WordCloud() {
      }
      const handleLang = event => {
 	     setLang(event.target.value)
+     }
+
+     const handleReset = event => {
+	     setText('');
+	     document.getElementById('text').value = '';
      }
      
      
@@ -301,22 +308,24 @@ export default function WordCloud() {
 							</div>
 						</div>
 						</div>
-						<textarea rows="10" cols="50" name='text'
+						<textarea id="text" rows="10" cols="50" name='text'
                                                  onChange={handleText} placeholder="Enter words here..."
 						   ></textarea>
-						<div class="generate">
+						   <div className="reset">
+						   <img src={reset} height="30px" width="30px"  onClick={handleReset} />
+						   </div>
+						<div class="generate"> 
                                               	<button onClick={handleGenerate} className="default-btn">
 						Generate Cloud
 					        </button>
 					        </div>
 						<AdSense.Google
-  client='ca-pub-2864345224210988'
-  slot='7806394673'
-  style={{ display: 'block' }}
-  format='auto'
-  responsive='true'
-  layoutKey='-gw-1+2a-9x+5c'
-/>
+						client='ca-pub-2864345224210988'
+						slot='7806394673'
+						style={{ display: 'block' }}
+						format='auto'
+						responsive='true'
+						/>
 						
 					</div>
 				</form>
