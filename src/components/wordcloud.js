@@ -9,6 +9,8 @@ import axios from 'axios';
 import { saveAs } from 'file-saver'
 import AdSense from 'react-adsense';
 import reset from '../img/reset.png';
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import Loader from "react-loader-spinner";
 
 require('dotenv').config()
 
@@ -27,6 +29,7 @@ export default function WordCloud() {
 	const [lang, setLang] = useState('en')
 	const [count, setCount] = useState('');
 	const [flag, setFlag] = useState();
+	const [loader, setLoader] = useState(false);
 
 	const downloadImage = () => {
 	setFlag(false);
@@ -95,6 +98,7 @@ export default function WordCloud() {
 
      const handleGenerate = async (event) => {
 	      event.preventDefault();
+	      setLoader(true)
 	      var formData = new FormData();
 	      formData.append("shape",maskname)
 	      if(customShape){
@@ -120,8 +124,8 @@ export default function WordCloud() {
 		      const result_img = document.getElementById('result-img')
 		      const imageurl = api_url  + response["data"]["image"]
 		      result_img.src = imageurl
-		      
 		      setCount(response["data"]["words"])
+		      setLoader(false)
 	      })
 	      
 
@@ -357,6 +361,17 @@ export default function WordCloud() {
 				</>
 				}
 			  </> : <> 
+			  <div className="loader"
+			  style={{height: '100%', width: '640px', position: 'absolute', display: 'grid', textAlign: 'center', top:'400px'}} 
+			  >
+			  <Loader
+        type="Circles"
+        color="#00BFFF"
+        height={100}
+        width={100}
+        visible={loader} //3 secs
+      />
+      </div>
 		          <img src={result} className="result-img" id="result-img" alt="cloud" />
 		              </>
 	             }
